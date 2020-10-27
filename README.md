@@ -30,6 +30,7 @@ Faça um fork do projeto e realize suas alterações. Para padronizar commits us
 
 Esse projeto conta com as seguintes gems e configurações:
  * [Rubocop](https://rubocop.org/): O code style guide da comunidade.
+ * [Rspec](https://rspec.info/): aplicação de TDD.
 
 Para contribuir com esse projeto, garanta que suas alterações atendam aos requisitos das gems e libs citadas acima.
 Ao passar por todos os checklists abra um pr com a descrição objetiva da alteração. Solicite o review e espere ser aprovado para realizar o merge.
