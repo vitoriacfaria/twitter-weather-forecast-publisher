@@ -7,6 +7,8 @@ ruby '2.7.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# Open weather gem
+gem 'open-weather'
 # Use Puma as the app server
 gem 'puma', '3.11'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
