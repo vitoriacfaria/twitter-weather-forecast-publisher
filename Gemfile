@@ -37,7 +37,7 @@ group :test do
   # Record test suite's HTTP interactions
   gem 'vcr', '~> 6.0'
   # Library for stubbing and setting expectations on HTTP requests
-  gem 'webmock' 
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
