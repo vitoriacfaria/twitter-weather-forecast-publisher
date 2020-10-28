@@ -32,6 +32,8 @@ group :development do
 end
 
 group :test do
+  # Code coverage analysis tool
+  gem 'simplecov', require: false
   # Record test suite's HTTP interactions
   gem 'vcr', '~> 6.0'
   # Library for stubbing and setting expectations on HTTP requests

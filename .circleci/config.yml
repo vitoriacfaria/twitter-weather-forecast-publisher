@@ -20,3 +20,8 @@ jobs:
       - run:
           name: Run Tests
           command: rspec
+      - store_artifacts:
+          path: coverage
+      - run:
+          name: rubocop
+          command: bundle exec rubocop
