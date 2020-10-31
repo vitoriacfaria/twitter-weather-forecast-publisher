@@ -11,9 +11,6 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
         environment:
           RAILS_ENV: test
-      - image: library/mysql:latest
-        environment:
-          - MYSQL_ALLOW_EMPTY_PASSWORD=true
     executor: ruby/default
     steps:
       - checkout
