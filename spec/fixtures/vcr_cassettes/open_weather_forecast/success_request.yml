@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/forecast?APPID=bbf0a2ec13defdb11f6efb1c3a6226c9&cnt=6&id=3467865&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 31 Oct 2020 01:04:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2506'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/forecast?APPID=bbf0a2ec13defdb11f6efb1c3a6226c9&cnt=6&id=3467865&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"cod":"200","message":0,"cnt":6,"list":[{"dt":1604113200,"main":{"temp":16.8,"feels_like":13.11,"temp_min":16.6,"temp_max":16.8,"pressure":1018,"sea_level":1018,"grnd_level":937,"humidity":81,"temp_kf":0.2},"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"clouds":{"all":86},"wind":{"speed":6.84,"deg":132},"visibility":10000,"pop":0.02,"sys":{"pod":"n"},"dt_txt":"2020-10-31
+        03:00:00"},{"dt":1604124000,"main":{"temp":16.62,"feels_like":13.53,"temp_min":16.51,"temp_max":16.62,"pressure":1016,"sea_level":1016,"grnd_level":936,"humidity":82,"temp_kf":0.11},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"clouds":{"all":81},"wind":{"speed":6,"deg":134},"visibility":10000,"pop":0,"sys":{"pod":"n"},"dt_txt":"2020-10-31
+        06:00:00"},{"dt":1604134800,"main":{"temp":16.21,"feels_like":13.38,"temp_min":16.16,"temp_max":16.21,"pressure":1016,"sea_level":1016,"grnd_level":937,"humidity":82,"temp_kf":0.05},"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"clouds":{"all":27},"wind":{"speed":5.43,"deg":130},"visibility":10000,"pop":0,"sys":{"pod":"d"},"dt_txt":"2020-10-31
+        09:00:00"},{"dt":1604145600,"main":{"temp":18.8,"feels_like":16.11,"temp_min":18.8,"temp_max":18.81,"pressure":1018,"sea_level":1018,"grnd_level":939,"humidity":74,"temp_kf":-0.01},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"clouds":{"all":59},"wind":{"speed":5.68,"deg":133},"visibility":10000,"pop":0,"sys":{"pod":"d"},"dt_txt":"2020-10-31
+        12:00:00"},{"dt":1604156400,"main":{"temp":19.88,"feels_like":16.12,"temp_min":19.88,"temp_max":19.88,"pressure":1017,"sea_level":1017,"grnd_level":938,"humidity":72,"temp_kf":0},"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"clouds":{"all":93},"wind":{"speed":7.52,"deg":139},"visibility":10000,"pop":0.05,"sys":{"pod":"d"},"dt_txt":"2020-10-31
+        15:00:00"},{"dt":1604167200,"main":{"temp":19.52,"feels_like":16.2,"temp_min":19.52,"temp_max":19.52,"pressure":1015,"sea_level":1015,"grnd_level":937,"humidity":74,"temp_kf":0},"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"clouds":{"all":94},"wind":{"speed":6.92,"deg":143},"visibility":10000,"pop":0.05,"sys":{"pod":"d"},"dt_txt":"2020-10-31
+        18:00:00"}],"city":{"id":3467865,"name":"Campinas","coord":{"lat":-22.9056,"lon":-47.0608},"country":"BR","population":0,"timezone":-10800,"sunrise":1604046235,"sunset":1604092780}}'
+  recorded_at: Sat, 31 Oct 2020 01:04:49 GMT
+recorded_with: VCR 6.0.0
