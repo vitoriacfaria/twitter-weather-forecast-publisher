@@ -12,7 +12,7 @@ jobs:
         environment:
           RAILS_ENV: test
       - image: library/mysql:latest
-        env:
+        environment:
           - MYSQL_ALLOW_EMPTY_PASSWORD=true
     executor: ruby/default
     steps:
