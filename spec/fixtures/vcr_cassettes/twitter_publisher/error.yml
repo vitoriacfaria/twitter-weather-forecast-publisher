@@ -1,0 +1,148 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - Basic NmpqaHFYQ0xLbFdQZnR2c0hlM0dZWTNnWjo0eUJlQXFBelpOQ0pNaGZXWmhQNjMycWpWT1J6RU9FSHBqdndrWG80OFhhdkdUaGlRNw==
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '157'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 01 Nov 2020 01:04:52 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 01 Nov 2020 01:04:52 GMT
+      Ml:
+      - A
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A160419269238515193; Max-Age=63072000; Expires=Tue, 01 Nov 2022
+        01:04:52 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_vc2iWYina5INYbLT7JUDoA=="; Max-Age=63072000; Expires=Tue,
+        01 Nov 2022 01:04:52 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - b9eb490beaf8d3e7bd0463a1bbc67d55
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Response-Time:
+      - '12'
+      X-Transaction:
+      - 007fedff00667844
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAF29JAEAAAAAxjW2sE7v0JAC5vmF%2BDotzj%2BUenc%3DnQFQsSaSPehHFA1o2y1qBCd2nTxwPDrZSRnCFzd3jCu7yAKhMl"}'
+  recorded_at: Sun, 01 Nov 2020 01:04:52 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/update.json
+    body:
+      encoding: UTF-8
+      string: status=Teste+de+mensagem
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAF29JAEAAAAAxjW2sE7v0JAC5vmF%2BDotzj%2BUenc%3DnQFQsSaSPehHFA1o2y1qBCd2nTxwPDrZSRnCFzd3jCu7yAKhMl
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 01 Nov 2020 01:04:53 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A160419269309869973; Max-Age=63072000; Expires=Tue, 01 Nov 2022
+        01:04:53 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_jRR+eIbf9nXY0/Xw+3jzuQ=="; Max-Age=63072000; Expires=Tue,
+        01 Nov 2022 01:04:53 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - fdb22bc1e35d78af3d712a581b2ce81b
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '9'
+      X-Transaction:
+      - 00d9db4200d18fe9
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":220,"message":"Your credentials do not allow access
+        to this resource."}]}'
+  recorded_at: Sun, 01 Nov 2020 01:04:53 GMT
+recorded_with: VCR 6.0.0
