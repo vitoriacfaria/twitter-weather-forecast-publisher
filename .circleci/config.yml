@@ -20,6 +20,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install sqlite lib
+          command: apt-get install libsqlite3-dev
+      - run:
           name: Bundle Install
           command: bundle check || bundle install
       - run:
