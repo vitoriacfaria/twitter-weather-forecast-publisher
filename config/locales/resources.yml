@@ -1,0 +1,6 @@
+pt-BR:
+  forecasts:
+    tweet: 
+      mean_phase: "%{temp}°C e %{weather} em %{city} em %{date}."
+      simple_forecast: "%{temp}°C em %{date}"
+      mean_forecasts: " Média para os próximos dias: %{first}, %{second}, %{third}, %{fourth} e %{fifth}."
