@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Wed, 04 Nov 2020 00:48:17 GMT
+      - Wed, 04 Nov 2020 01:05:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"cod":"404","message":"city not found"}'
-  recorded_at: Wed, 04 Nov 2020 00:48:17 GMT
+  recorded_at: Wed, 04 Nov 2020 01:05:52 GMT
 recorded_with: VCR 6.0.0

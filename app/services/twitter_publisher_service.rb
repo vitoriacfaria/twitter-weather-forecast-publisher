@@ -6,7 +6,7 @@ require 'open_weather'
 class TwitterPublisherService
   attr_accessor :message
 
-  def initialize(message)
+  def initialize(message:)
     @message = message
   end
 

@@ -6,8 +6,8 @@ RSpec.describe 'TwitterPublisherService', type: :service do
   describe '#publish' do
     context 'success tweet' do
       VCR.use_cassette('twitter_publisher/success_request') do
-        message = 'Teste de mensagem'
-        response = TwitterPublisherService.new(message).publish
+        params = { message: 'Teste de mensagem' }
+        response = TwitterPublisherService.new(params).publish
 
         it { expect(response).to be_a Twitter::Tweet }
         it { expect(response).to include :id }
@@ -17,8 +17,8 @@ RSpec.describe 'TwitterPublisherService', type: :service do
     context 'return error' do
       it do
         VCR.use_cassette('twitter_publisher/error') do
-          message = 'Teste de mensagem'
-          expect(TwitterPublisherService.new(message).publish).to include(:code, :message)
+          params = { message: 'Teste de mensagem' }
+          expect(TwitterPublisherService.new(params).publish).to include(:code, :message)
         end
       end
     end
