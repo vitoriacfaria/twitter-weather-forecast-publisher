@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.openweathermap.org/data/2.5/forecast?APPID=bbf0a2ec13defdb11f6efb1c3a6226c9&cnt=6&id=1&units=metric
+    uri: http://api.openweathermap.org/data/2.5/weather?APPID=bbf0a2ec13defdb11f6efb1c3a6226c9&id=1&lang=pt_br&units=metric
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 31 Oct 2020 17:54:19 GMT
+      - Wed, 04 Nov 2020 00:48:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,7 +31,7 @@ http_interactions:
       Connection:
       - keep-alive
       X-Cache-Key:
-      - "/data/2.5/forecast?APPID=bbf0a2ec13defdb11f6efb1c3a6226c9&cnt=6&id=1&units=metric"
+      - "/data/2.5/weather?APPID=bbf0a2ec13defdb11f6efb1c3a6226c9&id=1&lang=pt_br&units=metric"
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"cod":"404","message":"city not found"}'
-  recorded_at: Sat, 31 Oct 2020 17:54:20 GMT
+  recorded_at: Wed, 04 Nov 2020 00:48:17 GMT
 recorded_with: VCR 6.0.0
