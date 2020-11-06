@@ -11,9 +11,17 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
         environment:
           RAILS_ENV: test
+      - image: circleci/mysql:8.0.18
+        command: [--default-authentication-plugin=mysql_native_password]
+        environment:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+          MYSQL_ROOT_HOST: '%'
     executor: ruby/default
     steps:
       - checkout
+      - run:
+          name: Install sqlite lib
+          command: apt-get install libsqlite3-dev
       - run:
           name: Bundle Install
           command: bundle check || bundle install
